@@ -1,12 +1,12 @@
 package org.dnyanyog.dao;
 
 import org.dnyanyog.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public class UserDao {
+import jakarta.persistence.Id;
 
-	public void save(User userTable) {
-		
-		
-	}
+public interface UserDao extends JpaRepository <User , Integer >{
+
+
 
 }

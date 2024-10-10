@@ -7,10 +7,12 @@ import org.dnyanyog.dto.UpdateUserRequest;
 import org.dnyanyog.dto.UpdateUserResponse;
 import org.dnyanyog.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Component;
+ 
+@Component
 public class AddUserService {  
 	 @Autowired 
-	 UserDao userDao ; 
+	  UserDao userDao ; 
 
 	public AddUserResponse addUser(AddUserRequest request) { 
 		  

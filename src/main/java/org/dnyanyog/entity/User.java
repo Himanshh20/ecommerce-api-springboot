@@ -5,24 +5,22 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table; 
-@Entity 
+import jakarta.persistence.Table;
 
+@Entity 
 @Table 
 public class User {   
 	 @Id  
-	 @Column 
-	     Integer user_id  ;  
-	 @Column
-	   String firstName ; 
-	 @Column
-	  String lastName;  
-	@Column
-	  String  loginName  ;  
-	 @Column
-	  String  password  ; 
+	 @GeneratedValue(strategy = GenerationType.AUTO)
+	  private  int user_id  ;  
 
-	 public Integer getUser_id() {
+	  private String firstName ; 
+	 
+	  private String lastName; 
+	 private String  loginName  ;  
+	private  String  password  ; 
+
+	 public int getUser_id() {
 		return user_id;
 	}
 	public void setUser_id(Integer user_id) {

@@ -13,9 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class AddUSerController {   
 	 @Autowired 
 	  private AddUserService addUserService  ; 
-	  @PostMapping (path = " /AddUser")  
+	  @PostMapping (path = "/AddUser")  
 	   public AddUserResponse addUser(@RequestBody AddUserRequest request )  {
-		   System.out.println(request) ;  
 		    return addUserService.addUser(request) ; 
 		    
 	  }

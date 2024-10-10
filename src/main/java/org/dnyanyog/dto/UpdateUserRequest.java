@@ -3,9 +3,8 @@ package org.dnyanyog.dto;
 public class UpdateUserRequest { 
 	 private String firstName ; 
 	  private String lastName ;  
-	   public String getFirstName() {
-		return firstName;
-	}
+	  
+	
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
@@ -42,6 +41,10 @@ public class UpdateUserRequest {
 		}
 		public void setUser_id(Integer user_id) {
 			this.user_id = user_id;
+		}
+		public String getFirstName() {
+			// TODO Auto-generated method stub
+			return null;
 		} 
 	      
 	    
